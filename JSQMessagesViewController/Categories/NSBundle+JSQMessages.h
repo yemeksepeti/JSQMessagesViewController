@@ -39,4 +39,6 @@
  */
 + (NSString *)jsq_localizedStringForKey:(NSString *)key;
 
++ (void)jsq_setLocalizationBundle:(NSBundle*)bundle;
+
 @end
