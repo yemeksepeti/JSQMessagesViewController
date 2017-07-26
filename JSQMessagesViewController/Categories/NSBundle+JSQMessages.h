@@ -41,6 +41,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (nullable NSString *)jsq_localizedStringForKey:(NSString *)key;
 
-@end
++ (void)jsq_setLocalizationBundle:(NSBundle*)bundle;
 
 NS_ASSUME_NONNULL_END
+@end

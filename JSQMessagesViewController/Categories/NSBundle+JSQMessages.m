@@ -34,9 +34,14 @@
     return [NSBundle bundleWithPath:assetPath];
 }
 
+static NSBundle *localizationBundle;
++ (void)jsq_setLocalizationBundle:(NSBundle*)bundle {
+    localizationBundle = bundle;
+}
+
 + (NSString *)jsq_localizedStringForKey:(NSString *)key
 {
-    return NSLocalizedStringFromTableInBundle(key, @"JSQMessages", [NSBundle jsq_messagesAssetBundle], nil);
+    return NSLocalizedStringFromTableInBundle(key, @"Accessibility", localizationBundle, nil);
 }
 
 @end
